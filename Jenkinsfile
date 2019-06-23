@@ -24,7 +24,7 @@ pipeline {
     post{
         always{
                 //Upload test results
-                assertthatBddReport(credentialsId: '10005-creds', jsonReportFolder: 'report', jsonReportIncludePattern: '**/*.json', projectId: '10005', runName: 'Smoke test run', type: 'cucumber')
+                assertthatBddReport(credentialsId: '10005-creds', jsonReportFolder: 'target/report/surefire-reports/cucumber', jsonReportIncludePattern: '**/*.json', projectId: '10005', runName: 'Smoke test run', type: 'cucumber')
         }
     }
 }
