@@ -27,3 +27,4 @@ pipeline {
                 assertthatBddReport(credentialsId: '10005-creds', jsonReportFolder: 'report', jsonReportIncludePattern: '**/*.json', projectId: '10005', runName: 'Smoke test run', type: 'cucumber')
         }
     }
+}
